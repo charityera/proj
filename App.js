@@ -3,7 +3,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { AppProvider } from "./src/WelcomePage/context";
-import { SignUpProvider as ClientSignUpProvider } from "./src/Auth/context";
+import { SignUpProvider as ClientSignUpProvider } from "./src/Auth/userRegister/context";
 import { SignUpProvider as SpecialistSignUpProvider } from "./src/Auth/specialistRegister/context";
 import { SignInProvider } from "./src/Auth/signIn/context";
 import { UserHomeProvider } from "./src/User/context";
@@ -17,8 +17,8 @@ import Towing from "./src/User/Towing";
 import SpecialistHome from "./src/Specialist";
 import { SpecialistProvider } from "./src/Specialist/context";
 import { TowingProvider } from "./src/User/Towing/context";
-import LocationProvider from "./src/User/Location/context"; // Corrected import
-import LocationScreen from "./src/User/Location"; // Corrected import
+import LocationProvider from "./src/User/Location/context";
+import LocationScreen from "./src/User/Location";
 
 const Stack = createNativeStackNavigator();
 

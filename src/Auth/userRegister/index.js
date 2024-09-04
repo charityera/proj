@@ -9,7 +9,7 @@ import {
   ScrollView,
   Platform,
 } from "react-native";
-import { useSignUp } from "./context";
+import { useSignUp } from "./userRegister/context";
 import styles from "./styles";
 import { useNavigation } from "@react-navigation/native";
 
